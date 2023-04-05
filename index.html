@@ -186,24 +186,24 @@
       }
     },3000);
 
-    // var element = document.getElementById("subscribe");
-    // function cancel(){
-    //   element.classList.remove("visible");
-    //   element.classList.add("invisible");
-    // }
+    var element = document.getElementById("subscribe");
+    function cancel(){
+      element.classList.remove("visible");
+      element.classList.add("invisible");
+    }
 
-    // function subscribe(){
-    //   var email = document.getElementById("email").value;
-    //   if(email != ""){
-    //   alert('We will notify you at ' + email);
-    //   cancel();
-    //   }else{
-    //     alert("Please Enter Email to Subscribe");
-    //   };
-    // }
-    // setTimeout(()=>{
-    //   element.classList.add("visible");
-    // },10000);
+    function subscribe(){
+      var email = document.getElementById("email").value;
+      if(email != ""){
+      alert('We will notify you at ' + email);
+      cancel();
+      }else{
+        alert("Please Enter Email to Subscribe");
+      };
+    }
+    setTimeout(()=>{
+      element.classList.add("visible");
+    },10000);
   </script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
